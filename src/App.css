@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", sans-serif;
+}
+
+/* ------------------Оптовые продажи------------------- */
+
+.wholesale {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.whole {
+    width: 1200px;
+    height: 255px;
+    margin: 80px auto;
+    border-radius: 16px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 235, 224, 1);
+    padding: 20px;
+}
+
+.whole h3 {
+    color: rgba(25, 25, 25, 1);
+    font-size: 44px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+
+.whole p {
+    color: rgba(106, 106, 106, 1);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.whole button {
+    width: 266px;
+    height: 50px;
+    border-radius: 56px;
+    border: none;
+    background: rgb(189, 62, 62);
+    margin-top: 10px;
+    margin-left: 450px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.whole button:hover {
+    background: rgb(160, 45, 45);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.whole a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.terms {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.terms h6 {
+    width: 405px;
+    color: rgba(25, 25, 25, 1);
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.terms p {
+    width: 970px;
+    color: rgba(66, 66, 66, 1);
+    font-size: 16px;
+    font-weight: 300;
+    margin: 30px auto;
+}
+
+.manage {
+    width: 1200px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 0px 39px 38px 0px rgba(0, 0, 0, 0.02);
+    background: rgba(255, 255, 255, 1);
+    margin: 80px auto;
+}
+
+.manage h6 {
+    color: rgba(25, 25, 25, 1);
+    font-size: 32px;
+    font-weight: 800;
+    padding: 25px;
+}
+
+.manage input {
+    width: 270px;
+    height: 50px;
+    border: 1px solid rgba(198, 209, 224, 1);
+    border-radius: 42px;
+    opacity: 0.8;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.manage input:hover {
+    opacity: 1;
+    border-color: rgba(100, 149, 237, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inputs {
+    display: flex;
+    gap: 14px;
+    padding-left: 20px;
+}
+
+.inputs button {
+    width: 270px;
+    height: 55px;
+    border: 1px solid rgba(161, 99, 65, 1);
+    border-radius: 42px;
+    color: rgba(161, 99, 65, 1);
+    padding: 11px;
+
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.inputs button:hover {
+    background-color: rgba(161, 99, 65, 1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
+    transform: scale(1.05);
+}
+
+
+
+
+/* -----------------Продажи в рознице-------------------- */
+
+.retail {
+    width: 1200px;
+    height: 1091px;
+    margin: 80px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.retail h6 {
+    color: rgba(25, 25, 25, 1);
+    font-size: 34px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sale {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.sale img {
+    width: 320px;
+    height: 260px;
+}
+
+.sale1 {
+    width: 328px;
+    height: 420px;
+    border: 2px solid orange;
+}
+
+.address {
+    color: rgba(114, 130, 153, 1);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sale button {
+    width: 240px;
+    height: 48px;
+    border: 1px solid rgba(161, 99, 65, 1);
+    border-radius: 42px;
+    color: rgba(161, 99, 65, 1);
+    padding: 10px;
+    margin-left: 40px;
+
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sale button:hover {
+    background-color: rgba(161, 99, 65, 1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
+    transform: scale(1.05);
+}
+
+
+
+/* ---------------------Качество----------------------- */
+
+.quality {
+    width: 1440px;
+    margin: 80px auto;
+}
+
+.manages {
+    width: 1200px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 0px 39px 38px 0px rgba(0, 0, 0, 0.02);
+    background: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+}
+
+.manages h6 {
+    color: rgba(25, 25, 25, 1);
+    font-size: 32px;
+    font-weight: 800;
+    padding: 25px;
+}
+
+.manages input {
+    width: 270px;
+    height: 50px;
+    border: 1px solid rgba(198, 209, 224, 1);
+    border-radius: 42px;
+    opacity: 0.8;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.manages input:hover {
+    opacity: 1;
+    border-color: rgba(100, 149, 237, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bound {
+    width: 1200px;
+    height: 272px;
+    border-radius: 16px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 235, 224, 1);
+    margin: 30px auto;
+}
+
+.bound h6 {
+    color: rgba(25, 25, 25, 1);
+    font-size: 44px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.bound p {
+    color: rgba(106, 106, 106, 1);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bound button {
+    width: 240px;
+    height: 48px;
+    border: 1px solid rgba(161, 99, 65, 1);
+    border-radius: 42px;
+    color: rgba(161, 99, 65, 1);
+    padding: 10px;
+    margin-left: 480px;
+    margin-top: 5px;
+
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bound button:hover {
+    background-color: rgba(161, 99, 65, 1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
+    transform: scale(1.05);
+}
+
+.control {
+    width: 1440px;
+    height: 440px;
+    margin: 80px auto;
+    border-radius: 40px 40px 0px 0px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.control h6 {
+    color: rgba(25, 25, 25, 1);
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.best {
+    width: 800px;
+    display: flex;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.confectioner {
+    width: 280px;
+    height: 220px;
+    border-radius: 10px;
+    background: rgb(248, 226, 226);
+}
+
+.describe {
+    width: 250px;
+    height: 20px;
+    color: rgba(25, 25, 25, 1);
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.image {
+    width: 128px;
+    height: 128px;
+    border-radius: 70px;
+    background: rgba(255, 235, 224, 1);
+    opacity: 0.7;
+    padding: 30px;
+    margin: 15px auto;
+}
+
+.photo {
+    width: 62px;
+    height: 62px;
+}
+
+.product {
+    width: 1000px;
+    height: 580px;
+    margin: 80px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.product h6 {
+    color: rgba(25, 25, 25, 1);
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding: 26px;
+}
+
+.product p {
+    color: rgba(66, 66, 66, 1);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.product button {
+    width: 240px;
+    height: 48px;
+    border: 1px solid rgba(161, 99, 65, 1);
+    border-radius: 42px;
+    color: rgba(161, 99, 65, 1);
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 380px;
+
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product button:hover {
+    background-color: rgba(161, 99, 65, 1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
+    transform: scale(1.05);
+}
+
+
+
+/* ------------------Контакты-------------------- */
+
+.contact {
+    width: 990px;
+    height: 180px;
+    margin: 60px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.contact p {
+    width: 1000px;
+    color: black;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.bounds {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 15px;
+}
+
+.bounds p {
+    width: 500px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.time {
+    width: 500px;
+    height: 200px;
+    margin: 50px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 15px;
+}
+
+.work {
+    width: 500px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.clock {
+    width: 200px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px auto;
+    padding-left: 30px;
+}
+
+.take {
+    width: 370px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.ordering {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.street {
+    width: 450px;
+    height: 180px;
+    margin: 15px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 25px;
+}
+
+.street h6 {
+    width: 420px;
+    color: black;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.street p {
+    width: 400px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.info {
+    width: 450px;
+    height: 180px;
+    margin: 15px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+}
+
+.info p {
+    width: 360px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info ul {
+    width: 300px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.end {
+    width: 800px;
+    height: 150px;
+    margin: 60px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.end p {
+    width: 800px;
+    color: black;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.leave {
+    width: 800px;
+    height: 230px;
+    margin: 60px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 15px;
+}
+
+.leave p {
+    width: 500px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.buttons {
+    width: 550px;
+    margin: 30px auto;
+}
+
+.buttons button {
+    width: 240px;
+    height: 48px;
+    border: 1px solid rgba(161, 99, 65, 1);
+    border-radius: 42px;
+    color: rgba(161, 99, 65, 1);
+    margin-left: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: rgba(161, 99, 65, 1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
+    transform: scale(1.05);
+}
+
+.buttons input {
+    width: 270px;
+    height: 50px;
+    border: 1px solid rgba(198, 209, 224, 1);
+    border-radius: 42px;
+    opacity: 0.8;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.buttons input:hover {
+    opacity: 1;
+    border-color: rgba(100, 149, 237, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* ---------------Вакансии-------------------- */
+
+.careers {
+    width: 800px;
+    height: 180px;
+    margin: 60px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 30px;
+}
+
+.careers h6 {
+    width: 230px;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.careers p {
+    width: 700px;
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.working {
+    width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+
+.team {
+    width: 600px;
+    height: 220px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 10px;
+}
+
+.offering {
+    width: 600px;
+    height: 220px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 10px;
+}
+
+.working p {
+    width: 700px;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: start;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.working ul {
+    width: 700px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start;
+    margin: 0 auto;
+}
+
+.require {
+    width: 600px;
+    height: 220px;
+    margin: 50px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+}
+
+.require p {
+    width: 700px;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.want {
+    width: 600px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 30px;
+}
+
+.want h6 {
+    width: 700px;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.want p {
+    width: 700px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start;
+    margin: 0 auto;
+}
+
+.want button {
+    width: 240px;
+    height: 48px;
+    border: 1px solid rgba(161, 99, 65, 1);
+    border-radius: 42px;
+    color: rgba(161, 99, 65, 1);
+    margin: 20px auto;
+    margin-left: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.want button:hover {
+    background-color: rgba(161, 99, 65, 1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
+    transform: scale(1.05);
+}
+
+
+
+
+/*--------------------Отзывы--------------------*/
+
+.aboutus {
+    width: 660px;
+    height: 110px;
+    margin: 50px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 30px;
+}
+
+.aboutus p {
+    width: 700px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start;
+    margin: 0 auto;
+}
+
+
+.comment {
+    width: 610px;
+    height: 650px;
+    margin: 50px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 30px;
+}
+
+.comment h6 {
+    width: 520px;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.comment p {
+    width: 550px;
+    font-size: 18px;
+    margin: 30px auto;
+}
+
+.review {
+    width: 500px;
+    height: 180px;
+    margin: 50px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    padding: 30px;
+}
+
+.review p {
+    width: 450px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review input {
+    width: 2 50px;
+    height: 50px;
+    border: 1px solid rgba(198, 209, 224, 1);
+    border-radius: 42px;
+    opacity: 0.8;
+    padding: 25px;
+    margin-top: 18px;
+    margin-left: 30px;
+    transition: all 0.3s ease;
+}
+
+.review input:hover {
+    opacity: 1;
+    border-color: rgba(100, 149, 237, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* ----------------Авторизация------------------ */
+
+.registration {
+    width: 507px;
+    height: 420px;
+    margin: 50px auto;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.registration h6 {
+    width: 200px;
+    padding-top: 30px;
+    padding-left: 160px;
+    color: rgba(25, 25, 25, 1);
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.registration p {
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: rgba(140, 149, 163, 1);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.google {
+    width: 420px;
+    height: 50px;
+    border-radius: 56px;
+    background: rgba(255, 95, 82, 1);
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.google:hover {
+    background-color: rgb(183, 9, 9);
+    box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
+    transform: scale(1.05);
+}
+
+.Faphone {
+    width: 420px;
+    height: 50px;
+    background: rgb(28, 105, 198);
+    border-radius: 56px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Faphone:hover {
+    background: rgb(3, 3, 91);
+    box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
+    transform: scale(1.05);
+}
+
+
+
+
+/* ----------------Политика конфиденциальности--------------------- */
+
+.politic {
+    width: 600px;
+    margin: 70px auto;
+}
+
+.politic h6 {
+    width: 480px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.politic p {
+    width: 520px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+}

@@ -1,0 +1,41 @@
+.footer_container {
+    width: 1440px;
+    height: 74px;
+    background: rgba(0, 0, 0, 1);
+    margin: 50px auto;
+    display: flex;
+    gap: 530px;
+}
+
+.bakery {
+    width: 420px;
+    height: 17px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-left: 80px;
+}
+
+.sweet {
+    color: rgb(254, 177, 190);
+}
+
+.confidentiality {
+    display: flex;
+    gap: 30px;
+    margin-top: 28px;
+}
+
+.politics {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+    /* text-decoration-line: underline; */
+}
+
+.phone_number {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+}

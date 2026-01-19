@@ -1,0 +1,142 @@
+.CAKE {
+    width: 1200px;
+    height: 1900px;
+    margin: 50px auto;
+    display: flex;
+    gap: 50px;
+}
+
+.Menu_Cake {
+    width: 310px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.name {
+    width: 300px;
+    color: rgba(25, 25, 25, 1);
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.class {
+    height: 33px;
+}
+
+.bento {
+    width: 310px;
+    height: 1835px;
+    border-radius: 14px;
+    background: rgba(243, 244, 245, 1);
+    margin: 25px auto;
+    padding: 15px;
+}
+
+
+.Cake_Photo {
+    width: 870px;
+    height: 1925px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.cheap {
+    width: 900px;
+    margin: 20px auto;
+    margin-left: 30px;
+    display: flex;
+    gap: 540px;
+}
+
+.chip {
+    padding-top: 15px;
+    border: none;
+    background: white;
+    transition: 0.3s ease;
+}
+
+.chip:hover {
+    color: red;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.dessert {
+    width: 895px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+
+.chocolate {
+    width: 230px;
+    height: 330px;
+    border-radius: 14px;
+    background: rgba(243, 244, 245, 1);
+}
+
+.chocolate img {
+    width: 230px;
+    height: 200px;
+}
+
+.chocolate h6 {
+    width: 226px;
+    color: rgb(76, 12, 12);
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.chocolate h6:hover {
+    color: rgb(226, 31, 63);
+    text-shadow: 1px 1px 5px rgba(226, 31, 63, 0.6);
+    transform: translateY(-2px);
+}
+
+.chocolate p {
+    width: 220px;
+    color: rgb(246, 3, 43);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.order {
+    width: 100px;
+    height: 30px;
+    margin-left: 70px;
+    background: red;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    transition: 0.2s ease, 0.2s ease;
+}
+
+.order:hover {
+    background: rgb(190, 4, 4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+    width: 230px;
+    color: rgba(168, 180, 197, 1);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 28px;
+    text-decoration: none;
+}
+
+.price:hover {
+    color: rgb(226, 31, 63);
+    transform: scale(1.05);
+}
