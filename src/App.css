@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Playfair Display", serif;
 }
 
 /* ------------------Оптовые продажи------------------- */
@@ -544,7 +544,7 @@
 }
 
 .end p {
-    width: 800px;
+    width: 790px;
     color: black;
     font-size: 26px;
     font-weight: 400;
@@ -738,6 +738,7 @@
     color: rgba(161, 99, 65, 1);
     margin: 20px auto;
     margin-left: 30px;
+    padding: 10px;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -754,6 +755,10 @@
 
 
 /*--------------------Отзывы--------------------*/
+
+.pinkchella {
+    background-image: "https://i.pinimg.com/736x/3e/6b/3d/3e6b3d6031e6eb0d96193dbc43061e0b.jpg";
+}
 
 .aboutus {
     width: 660px;
@@ -932,4 +937,63 @@
     font-size: 18px;
     font-weight: 400;
     padding: 10px;
+}
+
+
+
+
+
+.icons {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #888;
+    transition: 0.3s;
+}
+
+
+
+
+.chocolates {
+    width: 230px;
+    height: 330px;
+    margin: 0 auto;
+    border-radius: 14px;
+    background: rgba(243, 244, 245, 1);
+}
+
+.chocolates img {
+    width: 230px;
+    height: 200px;
+}
+
+.chocolates h6 {
+    width: 226px;
+    color: rgb(76, 12, 12);
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.chocolates h6:hover {
+    color: rgb(226, 31, 63);
+    text-shadow: 1px 1px 5px rgba(226, 31, 63, 0.6);
+    transform: translateY(-2px);
+}
+
+.chocolates p {
+    width: 220px;
+    color: rgb(246, 3, 43);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
 }

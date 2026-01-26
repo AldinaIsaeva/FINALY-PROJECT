@@ -2,7 +2,7 @@ import React from 'react'
 
 function Reviews() {
   return (
-    <div>
+    <div className='pinkchella'>
       <div className='aboutus'>
         <p>Мы любим радовать сладким и ценим каждую обратную связь 🍰💗 <br />
           Вот что о нас говорят наши клиенты 💬✨</p>

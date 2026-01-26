@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Homepage.css"
-import Order from '../../PAGES/Order'
 import { Link } from 'react-router-dom'
 
 function Homepage() {
