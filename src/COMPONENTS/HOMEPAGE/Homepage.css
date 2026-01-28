@@ -1,24 +1,91 @@
 .CAKE {
-    width: 1200px;
-    height: 1900px;
+    max-width: 1440px;
+    width: 100%;
     margin: 50px auto;
     display: flex;
     gap: 50px;
+    padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+    .CAKE {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 18px;
+    }
+    
+    .Menu_Cake {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .Cake_Photo {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .CAKE {
+        margin: 30px auto;
+        padding: 0 16px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .CAKE {
+        margin: 20px auto;
+        padding: 0 12px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .CAKE {
+        padding: 0 10px;
+        gap: 12px;
+    }
 }
 
 .Menu_Cake {
-    width: 310px;
+    max-width: 310px;
+    width: 100%;
     border-radius: 16px;
     background: rgba(255, 255, 255, 1);
+    flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+    .Menu_Cake {
+        max-width: 100%;
+    }
 }
 
 .name {
-    width: 300px;
+    max-width: 100%;
+    width: 100%;
     color: rgba(25, 25, 25, 1);
     font-size: 28px;
     font-weight: 800;
-    padding-top: 33px;
-    padding-left: 30px;
+    padding: 33px 30px 20px;
+    text-align: left;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 24px;
+        padding: 25px 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 22px;
+        padding: 20px 15px 12px;
+    }
 }
 
 .class {
@@ -26,39 +93,148 @@
 }
 
 .bento {
-    width: 310px;
-    height: 1835px;
+    max-width: 310px;
+    width: 100%;
     border-radius: 14px;
     background: rgba(243, 244, 245, 1);
     margin: 25px auto;
     padding: 15px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .bento {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bento {
+        padding: 12px;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .bento {
+        padding: 10px;
+        margin: 15px auto;
+    }
+}
+
+.bento ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.bento li {
+    padding: 8px 0;
+    font-size: 16px;
+    color: rgba(25, 25, 25, 1);
+}
+
+@media (max-width: 480px) {
+    .bento li {
+        font-size: 15px;
+        padding: 6px 0;
+    }
 }
 
 
 .Cake_Photo {
-    width: 870px;
-    height: 1925px;
+    max-width: 100%;
+    width: 100%;
+    flex: 1;
+    min-width: 0;
     border-radius: 16px;
     background: rgba(255, 255, 255, 1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .Cake_Photo {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Cake_Photo {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Cake_Photo {
+        padding: 12px;
+    }
 }
 
 .cheap {
-    width: 900px;
+    max-width: 100%;
+    width: 100%;
     margin: 30px auto;
-    margin-left: 30px;
+    margin-left: 0;
     display: flex;
-    gap: 510px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .cheap {
+        margin: 20px auto;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cheap {
+        margin: 15px auto;
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .cheap h2 {
-    padding-left: 20px;
+    padding-left: 0;
+    margin: 0;
+    font-size: clamp(22px, 5vw, 32px);
+    color: rgba(25, 25, 25, 1);
+    font-weight: 800;
+}
+
+@media (max-width: 480px) {
+    .cheap h2 {
+        font-size: 20px;
+    }
 }
 
 .chip {
-    width: 160px;
+    width: auto;
+    min-width: 140px;
+    padding: 8px 16px;
     border: none;
     background: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
     transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    .chip {
+        min-width: 120px;
+        padding: 6px 12px;
+        font-size: 13px;
+    }
 }
 
 .chip:hover {
@@ -69,34 +245,160 @@
 }
 
 .dessert {
-    width: 895px;
-    display: flex;
-    gap: 30px;
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-left: 75px;
+    margin-top: 30px;
+    margin-left: 0;
+    padding: 0;
+}
+
+@media (max-width: 1024px) {
+    .dessert {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dessert {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dessert {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .dessert {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
 }
 
 .chocolate {
-    width: 230px;
-    height: 330px;
+    width: 100%;
+    max-width: 230px;
+    margin: 0 auto;
     border-radius: 14px;
     background: rgba(243, 244, 245, 1);
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .chocolate {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .chocolate {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 999px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    flex: 0 0 auto;
+}
+
+.wishlist-btn:hover {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+.wishlist-icon {
+    width: 20px;
+    height: 20px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.wishlist-icon.active {
+    color: rgb(246, 3, 43);
+    fill: rgb(246, 3, 43);
+}
+
+@media (max-width: 480px) {
+    .wishlist-btn {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        min-height: 32px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .wishlist-icon {
+        width: 18px;
+        height: 18px;
+    }
 }
 
 .chocolate img {
-    width: 230px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
 }
 
 .chocolate h6 {
-    width: 226px;
+    max-width: 100%;
+    width: 100%;
     color: rgb(76, 12, 12);
     transition: 0.3s;
-
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 12px;
+    margin: 0;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    min-width: 0;
+}
+
+@media (max-width: 480px) {
+    .chocolate h6 {
+        font-size: 15px;
+        padding-top: 10px;
+    }
 }
 
 .chocolate h6:hover {
@@ -106,40 +408,119 @@
 }
 
 .chocolate p {
-    width: 220px;
+    max-width: 100%;
+    width: 100%;
     color: rgb(246, 3, 43);
     font-size: 18px;
     display: flex;
     justify-content: center;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    min-width: 0;
+}
+
+@media (max-width: 480px) {
+    .chocolate p {
+        font-size: 16px;
+        margin: 6px 0;
+    }
+}
+
+.chocolate > div {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .chocolate > div {
+        margin-top: 8px;
+    }
 }
 
 .order {
-    width: 100px;
-    height: 30px;
-    margin-left: 70px;
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+    min-height: 44px;
+    margin-left: 0;
     background: red;
     color: white;
-    padding: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
     cursor: pointer;
     text-decoration: none;
     border: none;
-    transition: 0.6s all ease;
+    border-radius: 8px;
+    transition: 0.3s all ease;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
 }
 
-.order:hover {
+@media (max-width: 480px) {
+    .order {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+}
+
+.order:hover:not(:disabled) {
     background: rgb(190, 4, 4);
     transform: translateY(-2px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     transform: scale(0.8);
 }
 
+.order:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: rgba(106, 106, 106, 0.5);
+}
+
+.invalid-price {
+    color: rgba(106, 106, 106, 1);
+    font-style: italic;
+}
+
+.loading-state,
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 20px;
+    color: rgba(106, 106, 106, 1);
+}
+
 .price {
-    width: 230px;
+    max-width: 100%;
+    width: 100%;
     color: rgba(168, 180, 197, 1);
     font-size: 18px;
     font-weight: 500;
-    margin-left: 28px;
+    margin-left: 0;
+    margin-top: 15px;
+    text-align: center;
     text-decoration: none;
+    display: block;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .price {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .price {
+        font-size: 15px;
+        margin-top: 10px;
+    }
 }
 
 .price:hover {

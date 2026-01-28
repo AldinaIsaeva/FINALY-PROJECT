@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contacts() {
   return (
-    <div>
+    <div className='contacts-page'>
       <div className='contact'>
         <p>Свяжитесь с нами <br />
           С радостью приготовим торт для вашего праздника и ответим на все вопросы 🍰</p>

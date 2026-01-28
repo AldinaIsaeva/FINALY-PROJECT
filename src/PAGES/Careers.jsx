@@ -2,7 +2,7 @@ import React from 'react'
 
 function Careers() {
   return (
-    <div>
+    <div className='careers-page'>
       <div className='careers'>
         <h6>Вакансии SweetLife</h6>
         <p>Мы любим своё дело, уделяем внимание каждой детали <br />

@@ -19,11 +19,9 @@ function Quality() {
                     сжимает субсветовой вихрь. Лазер отражает фронт.</p>
 
                 <iframe
-                    width="100%"
-                    height="315"
                     src="https://www.youtube.com/embed/ZjRQQFjf_VM"
                     title="YouTube video"
-                    // frameBorder="0"
+                    frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 />

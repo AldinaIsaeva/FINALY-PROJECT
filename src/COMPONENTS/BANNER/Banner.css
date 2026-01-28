@@ -1,5 +1,47 @@
 .Banner {
-    width: 1200px;
-    height: 300px;
+    max-width: 1200px;
+    width: 100%;
     margin: 50px auto;
+    padding: 0 20px;
+}
+
+.Banner .carousel {
+    height: 300px;
+}
+
+.Banner .carousel-inner {
+    height: 100%;
+}
+
+.Banner .carousel-item {
+    height: 100%;
+}
+
+.Banner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .Banner {
+        margin: 30px auto;
+        padding: 0 16px;
+    }
+    
+    .Banner .carousel {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Banner {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+    
+    .Banner .carousel {
+        height: 150px;
+    }
 }

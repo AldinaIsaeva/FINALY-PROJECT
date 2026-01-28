@@ -15,6 +15,9 @@ import Cart from "./PAGES/Cart";
 import With from "./PAGES/With";
 import Quality from "./PAGES/Quality";
 import Price from "./PAGES/Price";
+import AdminProductsPage from "./PAGES/AdminProductsPage";
+import Checkout from "./PAGES/Checkout";
+import OrderSuccess from "./PAGES/OrderSuccess";
 
 const myRouter = createBrowserRouter([
     {
@@ -94,6 +97,21 @@ const myRouter = createBrowserRouter([
             {
                 path: "price",
                 element: <Price />
+            },
+
+            {
+                path: "checkout",
+                element: <Checkout />
+            },
+
+            {
+                path: "order-success",
+                element: <OrderSuccess />
+            },
+
+            {
+                path: "admin/products",
+                element: <AdminProductsPage />
             }
 
         ]
