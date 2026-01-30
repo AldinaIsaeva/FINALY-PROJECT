@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import "./Banner.css";
 import cake1 from "../../SVG/Cake.svg";
 import cake2 from "../../SVG/Cake2.svg";
-import cake3 from "../../SVG/Cake3.svg";
+import cake3 from "..//../SVG/Cake3.svg";
 
 function Banner() {
   return (
