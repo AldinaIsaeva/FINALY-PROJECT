@@ -41,6 +41,14 @@ function Checkout() {
   const [lastOrderDraft, setLastOrderDraft] = useState(null);
   const modalTimerRef = useRef(null);
 
+  useEffect(() => {
+    return () => {
+      if (modalTimerRef.current) {
+        clearTimeout(modalTimerRef.current);
+      }
+    };
+  }, []);
+
   if (cartItems.length === 0) {
     return (
       <div className="checkout-page">
@@ -86,36 +94,55 @@ function Checkout() {
     return Object.keys(nextErrors).length === 0;
   };
 
-  useEffect(() => {
-    return () => {
-      if (modalTimerRef.current) {
-        clearTimeout(modalTimerRef.current);
+  const sendOrderToWhatsApp = (order) => {
+    const PHONE = "996559250515";
+    
+    const lines = [];
+    lines.push('🛒 Заказ с сайта');
+    lines.push('');
+    
+    if (order.id) {
+      lines.push(`Номер заказа: ${order.id}`);
+    }
+    lines.push(`Имя: ${order.name}`);
+    lines.push(`Телефон: ${order.phone}`);
+    
+    if (order.deliveryType === 'delivery') {
+      lines.push('Доставка: доставка');
+      if (order.address) {
+        lines.push(`Адрес: ${order.address}`);
       }
-    };
-  }, []);
-
-
-  const sendOrderToTelegram = async (order) => {
-    const response = await fetch('/api/send-order', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ order }),
+    } else {
+      lines.push('Доставка: самовывоз');
+    }
+    
+    if (order.payment) {
+      const paymentLabel = order.payment === 'card' ? 'карта' : 'наличные';
+      lines.push(`Оплата: ${paymentLabel}`);
+    }
+    
+    if (order.comment) {
+      lines.push(`Комментарий: ${order.comment}`);
+    }
+    
+    lines.push('');
+    lines.push('Товары:');
+    
+    order.items.forEach((item, index) => {
+      const title = item.title || '';
+      const qty = Number(item.qty) || 0;
+      const price = Number(item.price) || 0;
+      const lineTotal = qty * price;
+      lines.push(`${index + 1}) ${title} x${qty} — ${Math.round(lineTotal)} сом`);
     });
-
-    let data = null;
-    try {
-      data = await response.json();
-    } catch {
-      // ignore json parse error, handle via status
-    }
-
-    if (!response.ok || !data || data.ok !== true) {
-      const message =
-        (data && data.error) || 'Не удалось отправить заказ. Попробуйте ещё раз.';
-      throw new Error(message);
-    }
+    
+    lines.push('');
+    lines.push(`Итого: ${Math.round(order.total)} сом`);
+    
+    const message = lines.join('\n');
+    const waUrl = `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
+    
+    window.location.href = waUrl;
   };
 
   const handleSubmit = async (e) => {
@@ -159,19 +186,21 @@ function Checkout() {
     setLastOrderDraft(order);
 
     try {
-      await sendOrderToTelegram(order);
-
+      // Save order and clear cart before redirecting
+      dispatch(createOrder(order));
+      dispatch(clearCart());
+      
+      // Show success modal briefly
       setModal({
         open: true,
         type: 'success',
         message: 'Заказ принят ✅',
       });
 
+      // Redirect to WhatsApp after a brief delay to show modal
       modalTimerRef.current = setTimeout(() => {
-        dispatch(createOrder(order));
-        dispatch(clearCart());
-        navigate('/order-success');
-      }, 1300);
+        sendOrderToWhatsApp(order);
+      }, 500);
     } catch (err) {
       setModal({
         open: true,
@@ -180,26 +209,29 @@ function Checkout() {
           ? err.message
           : 'Не удалось отправить заказ. Попробуйте ещё раз.',
       });
-    } finally {
       setSubmitting(false);
     }
   };
 
-  const handleRetry = async () => {
+  const handleRetry = () => {
     if (!lastOrderDraft) return;
     setSubmitting(true);
     try {
-      await sendOrderToTelegram(lastOrderDraft);
+      // Save order and clear cart before redirecting
+      dispatch(createOrder(lastOrderDraft));
+      dispatch(clearCart());
+      
+      // Show success modal briefly
       setModal({
         open: true,
         type: 'success',
         message: 'Заказ принят ✅',
       });
+
+      // Redirect to WhatsApp after a brief delay to show modal
       modalTimerRef.current = setTimeout(() => {
-        dispatch(createOrder(lastOrderDraft));
-        dispatch(clearCart());
-        navigate('/order-success');
-      }, 1300);
+        sendOrderToWhatsApp(lastOrderDraft);
+      }, 500);
     } catch (err) {
       setModal({
         open: true,
@@ -208,7 +240,6 @@ function Checkout() {
           ? err.message
           : 'Не удалось отправить заказ. Попробуйте ещё раз.',
       });
-    } finally {
       setSubmitting(false);
     }
   };

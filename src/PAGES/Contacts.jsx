@@ -1,6 +1,13 @@
 import React from 'react'
 
 function Contacts() {
+  const handleSendOrder = () => {
+    const PHONE = "996557119412";
+    const defaultMessage = "Салам! Мен заказ бергим келет.";
+    const waUrl = `https://wa.me/${PHONE}?text=${encodeURIComponent(defaultMessage)}`;
+    window.location.href = waUrl;
+  };
+
   return (
     <div className='contacts-page'>
       <div className='contact'>
@@ -44,7 +51,7 @@ function Contacts() {
         <p>Оставьте сообщение, и мы свяжемся с вами в ближайшее время</p>
         <div className='buttons'>
           <input className='in'  type="text" placeholder='message'/>
-          <button>Отправить заказ 🍰</button>
+          <button onClick={handleSendOrder}>Отправить заказ 🍰</button>
         </div>
       </div>
 

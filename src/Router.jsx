@@ -18,6 +18,7 @@ import Price from "./PAGES/Price";
 import AdminProductsPage from "./PAGES/AdminProductsPage";
 import Checkout from "./PAGES/Checkout";
 import OrderSuccess from "./PAGES/OrderSuccess";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const myRouter = createBrowserRouter([
     {
@@ -101,7 +102,11 @@ const myRouter = createBrowserRouter([
 
             {
                 path: "checkout",
-                element: <Checkout />
+                element: (
+                    <ProtectedRoute>
+                        <Checkout />
+                    </ProtectedRoute>
+                )
             },
 
             {

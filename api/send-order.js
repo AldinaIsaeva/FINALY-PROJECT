@@ -1,3 +1,6 @@
+const tgToken = "8305670772:AAHNFUE3gGoN13YXBW41jtQBMc_Exbtg4T8"
+const CHAT_ID = 940450451
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
@@ -5,9 +8,9 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { TG_BOT_TOKEN, TG_CHAT_ID } = process.env;
+  
 
-    if (!TG_BOT_TOKEN || !TG_BOT_ID) {
+    if (!tgToken || !CHAT_ID) {
       return res
         .status(500)
         .json({ ok: false, error: 'Server configuration error: missing TG_BOT_TOKEN or TG_BOT_ID' });
@@ -110,7 +113,7 @@ export default async function handler(req, res) {
 
     const text = lines.join('\n');
 
-    const resp = await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`, {
+    const resp = await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

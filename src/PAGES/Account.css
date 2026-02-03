@@ -1,0 +1,286 @@
+/* Account Page Styles - BEM Convention */
+
+.account-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7c6d0;
+  padding: 40px 16px;
+  box-sizing: border-box;
+}
+
+.account-page__card {
+  width: 100%;
+  max-width: 560px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 22px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.account-page__title {
+  color: rgba(25, 25, 25, 1);
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 24px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.account-page__tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.account-page__tab {
+  flex: 1;
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.account-page__tab:hover {
+  color: #374151;
+  background: rgba(0, 123, 255, 0.05);
+}
+
+.account-page__tab--active {
+  background: #007bff;
+  color: white;
+  border-bottom: 2px solid #007bff;
+}
+
+.account-page__tab--active:hover {
+  background: #0056b3;
+  color: white;
+}
+
+.account-page__form {
+  width: 100%;
+}
+
+.account-page__field {
+  margin-bottom: 20px;
+}
+
+.account-page__label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.account-page__input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.account-page__input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.account-page__input::placeholder {
+  color: #9ca3af;
+}
+
+.account-page__error {
+  color: #dc2626;
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background: rgba(220, 38, 38, 0.1);
+  border-radius: 6px;
+  border-left: 3px solid #dc2626;
+}
+
+.account-page__button {
+  width: 100%;
+  padding: 14px 24px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+.account-page__button:hover:not(:disabled) {
+  background: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.account-page__button:active:not(:disabled) {
+  transform: translateY(0) scale(0.98);
+}
+
+.account-page__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.account-page__button--loading {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.account-page__footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Profile View Styles */
+.account-page__profile {
+  width: 100%;
+}
+
+.account-page__profile-title {
+  color: rgba(25, 25, 25, 1);
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 24px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.account-page__profile-info {
+  margin-bottom: 24px;
+}
+
+.account-page__profile-info p {
+  margin: 12px 0;
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.account-page__profile-info strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.account-page__logout {
+  width: 100%;
+  padding: 14px 24px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+.account-page__logout:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+.account-page__logout:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .account-page {
+    min-height: 100vh;
+    padding: 24px 16px;
+  }
+
+  .account-page__card {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .account-page__title,
+  .account-page__profile-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .account-page__tabs {
+    margin-bottom: 20px;
+  }
+
+  .account-page__tab {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .account-page {
+    padding: 20px 12px;
+  }
+
+  .account-page__card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .account-page__title,
+  .account-page__profile-title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .account-page__tab {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .account-page__input {
+    padding: 10px 14px;
+    font-size: 15px;
+  }
+
+  .account-page__button,
+  .account-page__logout {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .account-page__card {
+    padding: 16px;
+  }
+
+  .account-page__title,
+  .account-page__profile-title {
+    font-size: 20px;
+  }
+}
+
