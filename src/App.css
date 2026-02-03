@@ -790,7 +790,7 @@
 }
 
 .confectioner {
-    width: 100%;
+    /* width: 100%; */
     max-width: 280px;
     min-height: 220px;
     border-radius: 10px;
@@ -800,6 +800,7 @@
     align-items: center;
     padding: 15px;
 }
+
 
 @media (max-width: 480px) {
     .confectioner {
@@ -1771,7 +1772,7 @@
 }
 
 .require {
-    max-width: 1200px;
+    max-width: 600px;
     width: 100%;
     margin: 50px auto;
     border-radius: 16px;
@@ -1954,8 +1955,6 @@
     box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
     transform: scale(1.05);
 }
-
-
 
 
 
@@ -2170,6 +2169,13 @@
     }
 }
 
+
+.reviewww {
+    width: 700px;
+    display: flex;
+    gap: 30px;
+}
+
 .review input {
     width: 100%;
     max-width: 400px;
@@ -2184,6 +2190,32 @@
     transition: all 0.3s ease;
     box-sizing: border-box;
 }
+
+
+
+.review_button {
+    width: 240px;
+    height: 48px;
+    border: 1px solid rgba(161, 99, 65, 1);
+    border-radius: 42px;
+    color: rgba(161, 99, 65, 1);
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.review_button:hover {
+    background-color: rgba(161, 99, 65, 1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(161, 99, 65, 0.3);
+    transform: scale(1.05);
+}
+
+
 
 @media (max-width: 768px) {
     .review input {
@@ -3041,4 +3073,11 @@
 
 .order-success-link:hover {
     background: rgb(160, 45, 45);
+}
+
+.insta {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }

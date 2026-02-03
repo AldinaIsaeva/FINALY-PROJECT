@@ -68,31 +68,37 @@ function Homepage() {
           <ul>
             
 
+            <li>Классический</li>
             <li>Шоколадный</li>
-            <li>Ванильный</li>
             <li>Тирамису</li>
-            <li>Павлова</li>
-            <li>Медовик</li>
-            <br />
-
-           
-
             <li>Малиновая нежность</li>
-            <li>Карамельный</li>
-            <li>Муссовый</li>
             <li>Красный бархат</li>
             <br />
 
            
-            <li>Бенто</li>
-            <li>Торт для детей</li>
+
+            <li>Орео чизкейк</li>
+            <li>Трайфл с клубникой</li>
+            <li>Панна котта с мандаринами</li>
+            <li>Шоколадный фондан</li>
+            <li>Эклеры</li>
             <br />
 
-            <li>Напитки</li>
-            <li>Десерты</li>
+           
+            <li>Фисташка-Малина</li>
+            <li>Шоколад-Вишня</li>
+            <li>Банан-Клубника</li>
+            <li>Макарон с малиной</li>
+            <li>Макарон с карамелью</li>
+            <br />
+
+            <li>Какао с маршмеллоу</li>
+            <li>Латте с карамелью</li>
+            <li>Фруктовый смузи</li>
+            <li>Матча латте</li>
+            <li>Коктейль</li>
           </ul>
 
-          <Link className='price' to="/price">Указаны розничные цены</Link>
 
         </div>
       </div>
@@ -101,7 +107,7 @@ function Homepage() {
       <div className='Cake_Photo'>
         <div className='cheap'>
           <h2>Каталог</h2>
-          <button className='chip'>Сначала дешевле</button>
+          {/* <button className='chip'>Сначала дешевле</button> */}
         </div>
 
         <div className='dessert'>

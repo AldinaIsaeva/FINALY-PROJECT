@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Contacts() {
   const handleSendOrder = () => {
@@ -18,7 +19,7 @@ function Contacts() {
       <div className='bounds'>
         <p>📞Телефон: +996 (550 25-05-15) </p>
         <p>💬WhatsApp/Telegram: +996 (550 25-05-15)</p>
-        <p>📸Instagram/VK: @sweet_life</p>
+        <Link className='insta' to="https://www.instagram.com/sweet_life_tjk?igsh=MTR6M3A5NW84b2Z3Nw==">📸Instagram/VK: @sweet_life_tjk</Link>
         <p>Самый быстрый способ связи — WhatsApp/Telegram</p>
       </div>
 
@@ -52,6 +53,8 @@ function Contacts() {
         <div className='buttons'>
           <input className='in'  type="text" placeholder='message'/>
           <button onClick={handleSendOrder}>Отправить заказ 🍰</button>
+          <input className='in' type="text" placeholder='message' />
+          <button>Отправить заказ 🍰</button>
         </div>
       </div>
 

@@ -11,7 +11,7 @@ function Footer() {
       </div>
 
       <div className='confidentiality'>
-        <Link className='politics' to="/politic">Политика конфиденциальности</Link>
+        <Link className='politics' to="/politic">Политика конфиденциальности</Link> 
         <p className='phone_number'>+996 550 25-05-15</p>
       </div>
 

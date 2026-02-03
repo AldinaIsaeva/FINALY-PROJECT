@@ -41,7 +41,11 @@ function Reviews() {
         <div className='review'>
           <p>Уже заказывали у нас?  Нам будет приятно
              получить ваш отзыв 💖</p>
+
+             <div className='reviewww'>
              <input type="text" placeholder='Оставить отзыв'/>
+             <button className='review_button'>Отправить</button>
+             </div>
         </div>
       </div>
     </div>
