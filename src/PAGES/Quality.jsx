@@ -18,6 +18,9 @@ function Quality() {
                 <p>Турбулентность, по данным астрономических наблюдений,
                     сжимает субсветовой вихрь. Лазер отражает фронт.</p>
 
+                <p>Наша продукция</p>
+
+
                 <iframe
                     src="https://www.youtube.com/embed/ZjRQQFjf_VM"
                     title="YouTube video"
@@ -27,7 +30,6 @@ function Quality() {
                 />
 
 
-                <button>Наша продукция</button>
             </div>
 
             <div className='control'>

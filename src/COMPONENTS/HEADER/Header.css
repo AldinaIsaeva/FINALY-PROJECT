@@ -27,24 +27,24 @@
         flex-direction: row;
         align-items: center;
     }
-    
+
     .header_top {
         width: auto;
         flex: 0 0 auto;
     }
-    
+
     .catalog {
         cursor: default;
     }
-    
+
     .catalog:hover {
         background: rgb(230, 67, 94);
     }
-    
+
     .catalog:focus {
         outline: none;
     }
-    
+
     .TheLinks {
         display: flex !important;
         flex: 1;
@@ -56,7 +56,7 @@
         border-top: none;
         border-radius: 0;
     }
-    
+
     .menu_overlay {
         display: none !important;
     }
@@ -66,7 +66,7 @@
     .header_container {
         padding: 0 16px;
     }
-    
+
     .header_top {
         gap: 20px;
     }
@@ -79,30 +79,32 @@
         align-items: stretch;
         gap: 0;
     }
-    
+
     .header_top {
         gap: 12px;
         flex-wrap: nowrap;
     }
-    
+
     .sweetlife {
         font-size: 36px;
     }
-    
+
     .shop_name {
         flex: 1 1 auto;
         min-width: 0;
         overflow: hidden;
     }
-    
+
     .catalog {
         flex: 0 0 auto;
         width: 120px;
         height: 40px;
     }
-    
-    .account { display: none !important; }
-    
+
+    .account {
+        display: none !important;
+    }
+
     .TheLinks {
         display: none !important;
         flex-direction: column;
@@ -117,11 +119,11 @@
         position: relative;
         z-index: 60;
     }
-    
+
     .TheLinks.TheLinks--open {
         display: flex !important;
     }
-    
+
     .TheLinks.TheLinks--open .mobile_account {
         display: flex;
         gap: 16px;
@@ -130,7 +132,7 @@
         justify-content: flex-start;
         padding-left: 20px;
     }
-    
+
     .Links {
         padding: 12px 20px;
         color: rgba(61, 66, 73, 1);
@@ -142,18 +144,18 @@
         width: 100%;
         text-align: left;
     }
-    
+
     .Links:hover {
         background-color: rgba(230, 67, 94, 0.1);
         color: rgb(230, 67, 94);
         text-decoration: none;
     }
-    
+
     .header_container {
         position: relative;
         z-index: 60;
     }
-    
+
     .menu_overlay {
         position: fixed;
         inset: 0;
@@ -166,21 +168,21 @@
     .header_container {
         padding: 0 10px;
     }
-    
+
     .header_top {
         gap: 8px;
     }
-    
+
     .sweetlife {
         font-size: 28px;
     }
-    
+
     .catalog {
         width: auto;
         min-width: 100px;
         padding: 0 8px;
     }
-    
+
     .catalog .span {
         display: none;
     }
@@ -190,32 +192,32 @@
     .header_container {
         padding: 0 8px;
     }
-    
+
     .header_top {
         gap: 6px;
     }
-    
+
     .sweetlife {
         font-size: 24px;
     }
-    
+
     .catalog {
         min-width: 80px;
         padding: 0 8px;
     }
-    
+
     .TheLinks {
         gap: 12px;
         padding: 15px 0;
     }
-    
+
     .Links {
         font-size: 14px;
         padding: 10px 15px;
     }
 }
 
-.sweetlife{
+.sweetlife {
     font-size: 50px;
     color: rgb(250, 53, 92);
     transition: all 0.3s ease;
@@ -245,7 +247,8 @@
     border: none;
     cursor: pointer;
     padding: 0;
-    transition: background 0.3s ease;
+    margin-top: 10px;
+    transition: 0.3s ease;
 }
 
 .catalog:hover {
@@ -271,7 +274,7 @@
 .TheLinks {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     flex: 1;
     min-width: 0;
 }
@@ -290,6 +293,7 @@
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
+    margin-top: 15px;
 }
 
 .Links:hover {
@@ -310,6 +314,7 @@
     gap: 5px;
     margin-left: auto;
     flex-shrink: 0;
+    margin-top: 13px;
 }
 
 @media (max-width: 768px) {
